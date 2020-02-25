@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  tidal:
+    build: .
+    shm_size: '1gb'
+    privileged: true
+    ports:
+        - "57110:57110/udp"
+        - "57120:57110/udp"
+        - "8000:8000/tcp"
+    ulimits:
+        rtprio: 95
+        memlock: -1
+    user: tidal
+    entrypoint: "bash -l"
+    command: "./startup.sh"
+    volumes:
+        - "./configs/SuperCollider:/home/tidal/.config/SuperCollider:rw"
+        - "/dev/shm:/dev/shm:rw"
+    stdin_open: true
+    tty: true
+        
