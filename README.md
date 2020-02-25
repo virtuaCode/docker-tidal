@@ -18,4 +18,5 @@ docker-compose up
 ## Configuration
 
 SuperCollider startup file:
+
     - `./configs/SuperCollider/startup.scd`
