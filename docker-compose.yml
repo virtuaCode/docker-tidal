@@ -2,12 +2,11 @@ version: "3.7"
 services:
   tidal:
     build: .
-    shm_size: '1gb'
+    environment: 
+      ENABLE_EXTRAMUROS: 0
+    network_mode: "host"
+    shm_size: '256gb'
     privileged: true
-    ports:
-        - "57110:57110/udp"
-        - "57120:57120/udp"
-        - "8000:8000/tcp"
     ulimits:
         rtprio: 95
         memlock: -1

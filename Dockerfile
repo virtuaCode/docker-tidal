@@ -114,7 +114,6 @@ COPY --chown=1000:1000 ["./configs/startup.sh", "/home/tidal/startup.sh"]
 
 RUN chmod +x startup.sh
 
-EXPOSE 19000/udp
 EXPOSE 57120/udp
 EXPOSE 57110/udp
 EXPOSE 8000/tcp
