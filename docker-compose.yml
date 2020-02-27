@@ -5,7 +5,7 @@ services:
     environment: 
       ENABLE_EXTRAMUROS: 0
     network_mode: "host"
-    shm_size: '256gb'
+    shm_size: '256mb'
     privileged: true
     ulimits:
         rtprio: 95
