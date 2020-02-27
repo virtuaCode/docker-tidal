@@ -15,6 +15,8 @@ Start the docker container with:
 docker-compose up
 ```
 
+Additionally the container provides a live-coding web-app ([extramuros](https://github.com/thgrund/extramuros/tree/osc)) which is available at http://localhost:8000
+
 ## Configuration
 
 SuperCollider startup file:
