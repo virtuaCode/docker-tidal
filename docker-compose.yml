@@ -6,7 +6,7 @@ services:
     privileged: true
     ports:
         - "57110:57110/udp"
-        - "57120:57110/udp"
+        - "57120:57120/udp"
         - "8000:8000/tcp"
     ulimits:
         rtprio: 95
