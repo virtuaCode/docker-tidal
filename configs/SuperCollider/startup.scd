@@ -9,6 +9,9 @@ s.waitForBoot {
     ~dirt = SuperDirt(2, s);
     ~dirt.loadSoundFiles;
     s.sync;
+
+    // Start with senderAddr argument
+    // ~dirt.start(57120, [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24], (NetAddr.fromIP("172.17.0.1")));
     ~dirt.start(57120, [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]);
 
     (
